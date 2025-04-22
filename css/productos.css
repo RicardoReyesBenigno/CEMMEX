@@ -11055,8 +11055,12 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  width: 100%;      /* para que escale hasta ese máximo */
+  height: auto;
 }
+
 .portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;
