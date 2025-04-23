@@ -10943,13 +10943,18 @@ p {
   }
 }
 header.masthead {
-  background-position-y:60%;
+  padding-top: 10.5rem;
+  padding-bottom: 12rem;
   text-align: center;
-  background-position: center center;
+  color: #fff;
+  background-image: url("/assets/img/portfolio/contruccion1.avif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center 60%;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
