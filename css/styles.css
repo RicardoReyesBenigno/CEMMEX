@@ -211,6 +211,7 @@ p {
   position: relative;
   padding-bottom: 56.25%; /* Relación 16:9 */
   height: 0;
+  overflow: hidden;
 }
 
 .video iframe {
@@ -228,6 +229,18 @@ p {
   display: flex;
   align-items: center;
 }
+.ejemploProductos{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+.ejemploProductos h2{
+  color: #88b6d7;
+}
+.ejemploProductos p{
+  color: white;
+}
+
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
