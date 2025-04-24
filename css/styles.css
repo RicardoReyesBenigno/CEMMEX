@@ -240,8 +240,31 @@ p {
 .ejemploProductos p{
   color: white;
 }
+.productosMostrar{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+}
+.imagen-con-texto{
+  width: 300px;
+}
+.imagen-con-texto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+}
 
-
+.descripcion {
+  margin-top: 8px;
+  font-size: 16px;
+  color: white;
+}
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
