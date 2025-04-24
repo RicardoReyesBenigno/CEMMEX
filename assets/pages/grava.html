@@ -43,21 +43,24 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="/assets/img/portfolio/guijarros.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Guijarros alpinos</div>
+                          <!-- Usamos data-bs-target en lugar de href y aseguramos la misma ortografía -->
+                          <a class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal1" href="#">
+                            <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                <i class="fas fa-plus fa-3x"></i>
+                              </div>
                             </div>
+                            <img class="img-fluid" src="/assets/img/portfolio/guijarros.jpg" alt="Guijarros alpinos" />
+                          </a>
+                          <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Guijarros alpinos</div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -71,7 +74,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -392,77 +395,80 @@
                     </div>
                 </div>
             </div>
-            <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfoliomodal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/guijarros.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Portfolio item 1 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="/assets/img/close-icon.svg" alt="Close modal" />
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/mosaicos2.avif" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <h2 class="text-uppercase">Guijarros alpinos</h2>
+                <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/guijarros.jpg" alt="Guijarros alpinos" />
+                <p>Los guijarros alpinos, originarios de los Alpes como su nombre indica, 
+                    son grava de colores pastel suaves como beige, azul, gris y crema. Sus formas redondeadas 
+                    y la suave combinación de colores la hacen muy cálida y decorativa. Agradable para caminar, 
+                    lo suficientemente firme como para conducir coches, etc., y también ideal como guijarros para tejados.</p>
+                <ul class="list-inline">
+                  <li><strong>Propiedades</strong></li>
+                  <p><strong>Tipo de piedra:</strong> Mixta</p>
+                <p><strong>Dureza:</strong> Alta</p>
+                <p><strong>Color:</strong> Mezcla de pasteles</p>
+                <p><strong>Gravedad específica:</strong> ± 1500 kg/m³</p>
+                <p><strong>Forma:</strong> Redonda (naturalmente redondeada)</p>
+                <p><strong>Características especiales:</strong> Buena resistencia al desgaste, grano muy redondo.</p>
+                </ul>
+              </section>
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                  <i class="fas fa-xmark me-1"></i>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+         <!-- Portfolio item 2 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="/assets/img/close-icon.svg" alt="Close modal" />
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <h2 class="text-uppercase">Guijarros alpinos</h2>
+                <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/virutas.jpg" alt="Guijarros alpinos" />
+                <p>La grava amarilla es un tipo de piedra triturada decorativa de color amarillo intenso. 
+                    El tipo de piedra es mármol, lo que le confiere un brillo agradable. 
+                    La grava amarilla se utiliza para producir hormigón coloreado, además de como piedra decorativa en parques y jardines.</p>
+                <ul class="list-inline">
+                  <li><strong>Propiedades</strong></li>
+                  <br>
+                  <p><strong>Tipo de piedra:</strong> Marmol</p>
+                <p><strong>Dureza:</strong> Alta</p>
+                <p><strong>Color:</strong> Amarillo intenso</p>
+                <p><strong>Gravedad específica:</strong> ± 1600 kg/m³</p>
+                <p><strong>Forma:</strong> Angular(rota)</p>
+                <p><strong>Características especiales:</strong>Al ser mármol es mejor utilizarlo en un ambiente no demasiado húmedo para conservar el color.</p>
+                </ul>
+              </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+         
         <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -473,24 +479,23 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/mosaicos3.avif" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Gravilla gris de las ardenas</h2>
+                                    <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/grava gris.jpg" alt="..." />
+                                    <p>Las gravilla Ardennes son un tipo de piedra caliza triturada procedente de las Ardenas, Bélgica.
+                                         La gravilla Gris Ardennes es de color gris medio con bonitas vetas blancas. Debido a su dureza, 
+                                         es una piedra triturada ornamental muy popular para entradas de vehículos y aparcamientos. 
+                                         Para estos fines, se utilizan comúnmente los tamaños de 7/14 mm o 14/20 mm. Además, 
+                                         la gravilla también puede utilizarse como una elegante rocalla.</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
+                                        <li><strong>Propiedades</strong></li>
+                                        <br>
+                                        <p><strong>Tipo de piedra:</strong> Caliza</p>
+                                        <p><strong>Dureza:</strong> Alta</p>
+                                        <p><strong>Color:</strong> Gris medio</p>
+                                        <p><strong>Gravedad específica:</strong> ± 1500 kg/m³</p>
+                                        <p><strong>Forma:</strong> Angular(rota)</p>
+                                        <p><strong>Características especiales:</strong>Buen color y resistencia</p>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
                                 </div>
                             </div>
                         </div>
