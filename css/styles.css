@@ -242,7 +242,7 @@ p {
 }
 .productosMostrar{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
       gap: 20px;
       padding: 20px;
@@ -259,9 +259,15 @@ p {
   display: block;
   height: 100%;
 }
+/* Adaptación para móviles */
+@media (max-width: 600px) {
+  .imagen-con-texto {
+    flex: 1 1 100%; /* 1 por fila */
+  }
+}
 
 .descripcion {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 16px;
   color: white;
 }
@@ -10974,7 +10980,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #8a93a4;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
