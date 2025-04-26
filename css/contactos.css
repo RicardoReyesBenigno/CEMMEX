@@ -11529,3 +11529,10 @@ pilares-section {
       margin-bottom: 1.5rem;
   }
 }
+.pilar-icon {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
