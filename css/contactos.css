@@ -11399,3 +11399,132 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-bottom: 1.5rem;
   }
 }
+/* embalaje.css */
+.embalaje {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+/* -------------------------------------------------- */
+/* 1) Contenido de la izquierda */
+.embalaje__content {
+  flex: 1 1 50%;
+  background-color: #27405e;
+  color: #fff;
+  padding: 70px;
+  box-sizing: border-box;
+}
+.embalaje__title {
+  color: #c0281a;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.embalaje__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.embalaje__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.embalaje__icon {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.embalaje__text h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.embalaje__text p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* -------------------------------------------------- */
+/* 2) Imagen de la derecha */
+.embalaje__image {
+  flex: 1 1 50%;
+  background: url('/assets/img/portfolio/fondo-granel.jpg') center center / cover no-repeat;
+}
+
+/* -------------------------------------------------- */
+/* 3) Responsive: apilar en móvil */
+@media (max-width: 800px) {
+  .embalaje {
+    flex-direction: column;
+  }
+  .embalaje__content,
+  .embalaje__image {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .embalaje__content {
+    padding: 30px;
+  }
+  .embalaje__image {
+    height: 300px;
+  }
+}
+pilares-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.pilares-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.pilares-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.pilar {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pilar:hover {
+  transform: translateY(-5px);
+}
+
+.pilar h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pilar p {
+  color: #666;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .pilares-container {
+      flex-direction: column;
+  }
+  
+  .pilar {
+      margin-bottom: 1.5rem;
+  }
+}
