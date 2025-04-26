@@ -11387,3 +11387,15 @@ section#contact form#contactForm :-ms-input-placeholder {
   left: 0;
   color: #c0392b;
 }
+
+#map .contact-info {
+  max-width: none;
+  margin: 0;
+  padding: 0;           
+}
+@media (max-width: 767px) {
+  #map .map-responsive,
+  #map .contact-info {
+    margin-bottom: 1.5rem;
+  }
+}
