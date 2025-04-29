@@ -240,13 +240,10 @@ p {
 .ejemploProductos p{
   color: white;
 }
-.productosMostrar{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
-      gap: 20px;
-      padding: 20px;
-      text-align: center;
+.productosMostrar .card-img-top{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
 }
 .imagen-con-texto{
   width: 300px;
