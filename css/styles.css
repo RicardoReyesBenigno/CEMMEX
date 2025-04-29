@@ -240,13 +240,28 @@ p {
 .ejemploProductos p{
   color: white;
 }
-.productosMostrar{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
-      gap: 20px;
-      padding: 20px;
-      text-align: center;
+.productosMostrar .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.productosMostrar .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.productosMostrar .col-sm {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .productosMostrar .col-sm {
+      margin-bottom: 20px;
+  }
 }
 .imagen-con-texto{
   width: 300px;
