@@ -183,6 +183,7 @@ p {
 .contenido{
   max-width: 500px;
 }
+
 @media (max-width: 600px) {
   .informacion {
     flex-direction: column;
@@ -191,36 +192,11 @@ p {
 
 }
 
-.containerVideo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
-}
-
 .textoVideo {
   flex: 1;
   min-width: 250px;
 }
 
-.video {
-  flex: 1;
-  min-width: 300px;
-  position: relative;
-  padding-bottom: 56.25%; /* Relación 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-}
 .navbar img {
   height: 60px;
   margin-right: 15px;
