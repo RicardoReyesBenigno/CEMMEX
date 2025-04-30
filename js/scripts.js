@@ -54,3 +54,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+document
+.getElementById('contact')
+.addEventListener('click', function() {
+  // Cambiamos la URL incluyendo el hash
+  window.location.href = 'otra-pagina.html#contacto';
+});

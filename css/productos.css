@@ -11059,9 +11059,11 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 1rem;
@@ -11081,6 +11083,9 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
+}
+.informacion-text{
+  text-align: justify;
 }
 
 .timeline {
