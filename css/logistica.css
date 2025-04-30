@@ -176,6 +176,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
@@ -3618,7 +3619,7 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #070808;
+  --bs-nav-link-disabled-color: #6c757d;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -3689,7 +3690,7 @@ textarea.form-control-lg {
 
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
-  --bs-nav-pills-link-active-color: #100e0e;
+  --bs-nav-pills-link-active-color: #fff;
   --bs-nav-pills-link-active-bg: #ffc800;
 }
 .nav-pills .nav-link {
@@ -10853,7 +10854,7 @@ p {
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10902,12 +10903,13 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  background-size: cover;
+  height: 1.5rem;
+  transition: height 0.3s ease-in-out;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: black;
+  color:#000;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -10923,7 +10925,7 @@ p {
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    height: 4rem;
+    font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
@@ -10954,7 +10956,6 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11029,10 +11030,8 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
-  margin-bottom:auto;
-  text-align-last: center;
-  
+  font-weight: 700;
+  margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
@@ -11059,20 +11058,13 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 2rem;
-  text-align: justify;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
-  text-align: justify;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 1rem;
-  max-width: 300px;
-  width: 100%;      /* para que escale hasta ese máximo */
-  height: auto;
-  
+  margin-bottom: 2rem;
 }
-
 .portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;
@@ -11084,24 +11076,6 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
-}
-/* Botón 3D (sombra y transform) */
-.btn-contact {
-  padding: 0.6em 1.2em;
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 5px #5a6268;
-  transition: transform 0.1s, box-shadow 0.1s;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: none;
-  display: inline-block;
-}
-.informacion-text{
-  text-align: justify;
 }
 
 .timeline {
@@ -11291,7 +11265,6 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("/assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -11347,4 +11320,231 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.8em;
+  color: #222;
+}
+
+.contact-info h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+.contact-info p span {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.contact-info p a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.contact-info p a:hover {
+  text-decoration: underline;
+}
+
+.contact-info ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.contact-info ul li {
+  margin: 4px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.contact-info ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+}
+
+#map .contact-info {
+  max-width: none;
+  margin: 0;
+  padding: 0;           
+}
+@media (max-width: 767px) {
+  #map .map-responsive,
+  #map .contact-info {
+    margin-bottom: 1.5rem;
+  }
+}
+/*.camion.css */
+.camion {
+  margin-top:-200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* -------------------------------------------------- */
+/* 1) Contenido de la izquierda */
+.camion__content {
+  flex: 1 1 50%;
+  background-color: #27405e;
+  color: #fff;
+  padding: 70px;
+  box-sizing: border-box;
+}
+.camion__title {
+  color: #c0281a;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.camion__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.camion__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.camion__text h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.camion__text p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* -------------------------------------------------- */
+/* 2) Imagen de la derecha */
+.camion__image {
+  flex: 3 1 40%;
+  background: url('/assets/img/portfolio/transporte.jpg') center center / cover no-repeat;
+}
+.camion__image1 {
+    flex: 3 1 40%;
+    background: url('/assets/img/portfolio/buques.jpg') center center / cover no-repeat;
+  }
+  .camion__image2 {
+    flex: 3 1 40%;
+    background: url('/assets/img/portfolio/contenedor.jpg') center center / cover no-repeat;
+  }
+@media (max-width: 800px) {
+  .camion {
+    flex-direction: column;
+  }
+  .camion__content,
+  .camion__image {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .camion__content {
+    padding: 30px;
+  }
+  .camion__image {
+    height: 300px;
+  }
+}
+pilares-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.pilares-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+.pilares-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.pilar {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pilar:hover {
+  transform: translateY(-5px);
+}
+
+.pilar h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pilar p {
+  color: #666;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .pilares-container {
+      flex-direction: column;
+  }
+  
+  .pilar {
+      margin-bottom: 1.5rem;
+  }
+}
+.pilar-icon {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.logistica{
+    text-align: center;
+    margin:-3.5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.logistica-text{
+    text-align: center;
+    font-size: 1.2rem;
 }
