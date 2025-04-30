@@ -11415,6 +11415,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #fff;
   padding: 70px;
   box-sizing: border-box;
+  border: 2px outset red;
 }
 .camion__title {
   color: #c0281a;
@@ -11475,6 +11476,73 @@ section#contact form#contactForm :-ms-input-placeholder {
     height: 300px;
   }
 }
+/* -------------------------------------------------- */
+/* 1) Contenedor principal */
+.ship {
+    display: flex;
+    align-items: stretch;
+    margin-top: -13%;
+  }
+  /* -------------------------------------------------- */
+  /* 2) Imagen (izquierda) */
+  .ship__image {
+    flex: 3 1 40%;
+    background: url('/assets/img/portfolio/contenedor.jpg') center center / cover no-repeat;
+  }
+  
+  /* -------------------------------------------------- */
+  /* 3) Contenido (derecha) */
+  .ship__content {
+    flex: 1 1 50%;
+    background-color: #27405e;
+    color: #fff;
+    padding: 70px;
+    box-sizing: border-box;
+    border: 2px outset red;
+  }
+  .ship__title {
+    color: #c0281a;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  .ship__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ship__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .ship__text p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  
+  /* -------------------------------------------------- */
+  /* 4) Adaptación móvil */
+  @media (max-width: 800px) {
+    .ship {
+      flex-direction: column;
+    }
+    .ship__image,
+    .ship__content {
+      flex: 1 1 100%;
+      width: 100%;
+    }
+    .ship__content {
+      padding: 30px;
+    }
+    .ship__image {
+      height: 300px;
+    }
+  }
+  
 pilares-section {
   max-width: 1200px;
   margin: 0 auto;
