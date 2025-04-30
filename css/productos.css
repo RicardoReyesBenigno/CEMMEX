@@ -11070,6 +11070,7 @@ header.masthead .masthead-heading {
   max-width: 300px;
   width: 100%;      /* para que escale hasta ese máximo */
   height: auto;
+  
 }
 
 .portfolio-modal .close-modal {
@@ -11083,6 +11084,21 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
+}
+/* Botón 3D (sombra y transform) */
+.btn-contact {
+  padding: 0.6em 1.2em;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 5px #5a6268;
+  transition: transform 0.1s, box-shadow 0.1s;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  display: inline-block;
 }
 .informacion-text{
   text-align: justify;
