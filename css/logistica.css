@@ -11481,12 +11481,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 .ship {
     display: flex;
     align-items: stretch;
-    margin-top: -13%;
+    margin-top: -8%;
   }
   /* -------------------------------------------------- */
   /* 2) Imagen (izquierda) */
   .ship__image {
-    flex: 3 1 40%;
+    flex: 3 3 40%;
     background: url('/assets/img/portfolio/contenedor.jpg') center center / cover no-repeat;
   }
   

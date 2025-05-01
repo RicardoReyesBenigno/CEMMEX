@@ -11348,3 +11348,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+/* Define el tamaño fijo para los iconos dentro de las celdas */
+.table .img-cell {
+  width: 10px;      /* ancho deseado */
+  height: 16px;     /* alto deseado */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;   /* centra la imagen horizontalmente */
+}
+/* Opcional: asegúrate de centrar vertical y horizontalmente todo el contenido */
+.table td, .table th {
+  text-align: center;
+  vertical-align: middle;
+}
