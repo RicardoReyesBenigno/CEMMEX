@@ -31,7 +31,15 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/inicio.html">Quienes somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="/assets/pages/productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/assets/pages/logistica.html">Logistica</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="/assets/pages/logistica.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Logistica
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Distribucion</a></li>
+                            <li><a class="dropdown-item" href="#">Cumplimiento</a></li>
+                          </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="/assets/pages/contactos.html">Contactos</a></li>
                     </ul>
                 </div>
@@ -45,7 +53,7 @@
           </section>
 
         <!--camiones.html -->
-<section class="camion">
+<section class="camion" id="distribucion">
     <!-- Columna Izquierda: contenido -->
     <div class="camion__content">
       <h2 class="camion__title">Camiones</h2>

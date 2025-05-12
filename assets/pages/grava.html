@@ -19,10 +19,10 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a href="/inicio.html">
-                    <img src="/assets/img/logos/cemmex belize.png" alt="Logo" >
+                    <img src="/assets/img/logos/cemmex belize.png" alt="..." />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -32,7 +32,15 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/inicio.html">Quienes somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="/assets/pages/productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/assets/pages/logistica.html">Logistica</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="/assets/pages/logistica.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Logistica
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Distribucion</a></li>
+                            <li><a class="dropdown-item" href="#">Cumplimiento</a></li>
+                          </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="/assets/pages/contactos.html">Contactos</a></li>
                     </ul>
                 </div>
@@ -534,40 +542,95 @@
       </div>
     </div>
   </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Gravilla gris de las ardenas</h2>
-                                    <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/grava gris.jpg" alt="..." />
-                                    <p>Las gravilla Ardennes son un tipo de piedra caliza triturada procedente de las Ardenas, Bélgica.
-                                         La gravilla Gris Ardennes es de color gris medio con bonitas vetas blancas. Debido a su dureza, 
-                                         es una piedra triturada ornamental muy popular para entradas de vehículos y aparcamientos. 
-                                         Para estos fines, se utilizan comúnmente los tamaños de 7/14 mm o 14/20 mm. Además, 
-                                         la gravilla también puede utilizarse como una elegante rocalla.</p>
-                                    <ul class="list-inline">
-                                        <li><strong>Propiedades</strong></li>
-                                        <br>
-                                        <p><strong>Tipo de piedra:</strong> Caliza</p>
-                                        <p><strong>Dureza:</strong> Alta</p>
-                                        <p><strong>Color:</strong> Gris medio</p>
-                                        <p><strong>Gravedad específica:</strong> ± 1500 kg/m³</p>
-                                        <p><strong>Forma:</strong> Angular(rota)</p>
-                                        <p><strong>Características especiales:</strong>Buen color y resistencia</p>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+       <!-- Portfolio item 3 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-bs-dismiss="modal">
+          <img src="/assets/img/close-icon.svg" alt="Close modal" />
         </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="modal-body">
+                <!-- Project details-->
+                <h2 class="text-uppercase">Gravilla gris de las Ardenas</h2>
+                <img class="img-fluid d-block mx-auto" src="/assets/img/portfolio/grava gris.jpg" alt="Grava" />
+                <p class="row justify-content-center">Las gravilla Ardennes son un tipo de piedra caliza triturada procedente de las Ardenas, Bélgica. La gravilla Gris Ardennes es de color gris medio con bonitas vetas blancas.
+                     Debido a su dureza, es una piedra triturada ornamental muy popular para entradas de vehículos y aparcamientos. Para estos fines, se utilizan comúnmente los tamaños de 7/14 mm o 14/20 mm. Además, la gravilla también puede utilizarse como una elegante rocalla.</p>
+                <ul class="list-inline">
+                  <li><strong>Propiedades</strong></li>
+                  <br>
+                <p><strong>Tipo de piedra:</strong> Caliza</p>
+                <p><strong>Dureza:</strong> Alta</p>
+                <p><strong>Color:</strong> Gris medio</p>
+                <p><strong>Gravedad específica:</strong> ± 1500 kg/m³</p>
+                <p><strong>Forma:</strong> Angular(rota)</p>
+                <p><strong>Características especiales:</strong> Buen color y resistencia al desgaste.</p>
+                </ul>
+                <h3>Opciones de envío y tamaños disponibles</h3>
+                <br>
+                <table class="table table-bordered table-dark table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Bolsas de 20 kg</th>
+                        <th scope="col">Minibag (0,5 m3) / Midibag (0,7 m3) / Bigbag (1 m3), entregados de forma neutra en bolsas sin marcar</th>
+                        <th scope="col">Cargas sueltas a granel</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">0/2 mm</th>
+                        <td></td>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2/7 mm</th>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8/16 mm</th>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14/20 mm</th>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">20/40 mm</th>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                <img class="card-img-info" src="/assets/img/portfolio/piedras-negras1.jpg" alt="" />
+                <img class="card-img-info" src="/assets/img/portfolio/piedras-negras2.jpg" alt="" />
+                <img class="card-img-info" src="/assets/img/portfolio/piedras-negras3.jpg" alt="" />
+                <img class="card-img-info" src="/assets/img/portfolio/piedras-negras4.jpg" alt="" />
+                <img class="card-img-info" src="/assets/img/portfolio/piedras-negras5.jpg" alt="" />
+                <div class="modal-body">
+                    <h3>¡Haga una solicitud de precio para este producto!</h3>
+                    <p>¿Es usted un distribuidor especializado y desea obtener más información sobre este producto y su precio? Complete el formulario de contacto y nos pondremos en contacto con usted. Si se trata de una cantidad, tamaño, proyecto o trabajo específico, indíquelo en su solicitud.</p>
+                    <a class="btn-contact" href="contactos.html#contact">Solicitar precio</a>
+                </div>
+              </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
